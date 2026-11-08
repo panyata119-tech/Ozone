@@ -1,0 +1,16 @@
+{
+  "name": "line-group-guardian",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LINE group moderation bot using LINE Messaging API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@line/bot-sdk": "^9.8.0",
+    "express": "^4.21.2"
+  }
+}
