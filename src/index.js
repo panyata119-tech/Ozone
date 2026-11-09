@@ -85,6 +85,10 @@ async function handleMessage(event) {
   const cmd = text.trim();
   const gs = groupState(groupId);
 
+  if (cmd === "!myid") {
+    return reply(event.replyToken, `LINE User ID ของคุณ: ${userId}`);
+  }
+
   if (cmd.startsWith("!")) {
     if (!isAdmin(userId)) {
       await reply(event.replyToken, "คำสั่งนี้สำหรับผู้ดูแลกลุ่มเท่านั้น");
